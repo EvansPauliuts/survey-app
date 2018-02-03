@@ -363,6 +363,10 @@ input[type='submit']:hover {
 @media screen and (max-width : 736px) {
   .iam {
     margin-left: 2rem;
+     -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   }
   .App-header {
     padding: 20px 0 0;
