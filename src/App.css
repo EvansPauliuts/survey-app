@@ -21,7 +21,7 @@ body {
 }
 
 .iam .iam-avatar{
-  background: url('../iam.svg') no-repeat;
+  background: url('./iam.svg') no-repeat;
   width: 50px;
   height: 50px;
   display: block;
