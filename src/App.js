@@ -90,7 +90,7 @@ class App extends Component {
             <input class='option-input checkbox' type='radio' name='q1' value='Other' onChange={ this.handleQuestionChange }/>Other<br />
           </div>
           <div>
-            <label>Какая ваша любимая TV?</label><br />
+            <label>Какой ваш любимый TV?</label><br />
             <input class='option-input checkbox' type='radio' name='q2' value='Sony' onChange={ this.handleQuestionChange }/>Sony<br />
             <input class='option-input checkbox' type='radio' name='q2' value='Samsung' onChange={ this.handleQuestionChange }/>Samsung<br />
             <input class='option-input checkbox' type='radio' name='q2' value='Panasonic' onChange={ this.handleQuestionChange }/>Panasonic<br />
@@ -98,7 +98,7 @@ class App extends Component {
             <input class='option-input checkbox' type='radio' name='q2' value='Other' onChange={ this.handleQuestionChange }/>Other<br />
           </div>
           <div>
-            <label>Какая ваша любимая Смартфон?</label><br />
+            <label>Какой ваш любимый Смартфон?</label><br />
             <input class='option-input checkbox' type='radio' name='q3' value='Apple' onChange={ this.handleQuestionChange }/>Apple<br />
             <input class='option-input checkbox' type='radio' name='q3' value='Samsung' onChange={ this.handleQuestionChange }/>Samsung<br />
             <input class='option-input checkbox' type='radio' name='q3' value='Nexus' onChange={ this.handleQuestionChange }/>Nexus<br />
@@ -106,7 +106,7 @@ class App extends Component {
             <input class='option-input checkbox' type='radio' name='q3' value='Other' onChange={ this.handleQuestionChange }/>Other<br />
           </div>
           <div>
-            <label>Какая ваша любимая CPU?</label><br />
+            <label>Какое ваше любимое CPU?</label><br />
             <input class='option-input checkbox' type='radio' name='q4' value='Intel' onChange={ this.handleQuestionChange }/>Intel<br />
             <input class='option-input checkbox' type='radio' name='q4' value='AMD' onChange={ this.handleQuestionChange }/>AMD<br />
             <input class='option-input checkbox' type='radio' name='q4' value='Nvidia' onChange={ this.handleQuestionChange }/>Nvidia<br />
