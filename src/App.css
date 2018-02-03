@@ -27,7 +27,12 @@ body {
 }
 
 input {
+  -webkit-appearance: none;
+}
+
+input {
   margin: .3rem;
+  -webkit-appearance: none;
 }
 
 .App {
@@ -85,10 +90,19 @@ input {
 }
 
 #form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 input[type='text'] {
@@ -99,6 +113,7 @@ input[type='text'] {
   border: #eee solid 3px;
   font-size: 1rem;
   margin-bottom: 3rem;
+  -webkit-appearance: none;
 }
 
 form div {
@@ -112,9 +127,11 @@ form div label {
   color: #4C5D63;
   font-family: 'Avenir Next Cyr';
   font-weight: 700;
+  -webkit-appearance: none;
 }
 
 input[type='submit'] {
+  -webkit-appearance: none;
   padding: 1rem 2rem;
   color: gray;
   background: #32E0AD;
@@ -124,17 +141,25 @@ input[type='submit'] {
   outline: none;
   font-size: 1rem;
   margin-bottom: 5rem;
-  box-shadow: 0px 5px 11px rgba( 50, 224, 173, .7);
+  -webkit-box-shadow: 0px 5px 11px rgba( 50, 224, 173, .7);
+          box-shadow: 0px 5px 11px rgba( 50, 224, 173, .7);
   cursor: pointer;
   font-family: 'Avenir Next Cyr';
   font-weight: normal;
   text-transform: uppercase;
-  transform: translateX(0px);
+  -webkit-transform: translateX(0px);
+      -ms-transform: translateX(0px);
+          transform: translateX(0px);
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
 }
 
 input[type='submit']:hover {
-  transform: translateY(-8px) scale(1.05);
+  -webkit-appearance: none;
+  -webkit-transform: translateY(-8px) scale(1.05);
+      -ms-transform: translateY(-8px) scale(1.05);
+          transform: translateY(-8px) scale(1.05);
 }
 
 @media screen and (max-width : 736px) {
@@ -171,6 +196,24 @@ input[type='submit']:hover {
     font-size: 2rem;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
