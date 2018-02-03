@@ -83,35 +83,35 @@ class App extends Component {
         <form onSubmit={ this.handleQuestionSubmit.bind( this ) }>
           <div>
             <label>Какая ваша любимая Операционная система?</label><br />
-            <input type='radio' name='q1' value='Windows' onChange={ this.handleQuestionChange }/>Windows<br />
-            <input type='radio' name='q1' value='OSX' onChange={ this.handleQuestionChange }/>OSX<br />
-            <input type='radio' name='q1' value='Linux' onChange={ this.handleQuestionChange }/>Linux<br />
-            <input type='radio' name='q1' value='Solaris' onChange={ this.handleQuestionChange }/>Solaris<br />
-            <input type='radio' name='q1' value='Other' onChange={ this.handleQuestionChange }/>Other<br />
+            <input class='option-input checkbox' type='radio' name='q1' value='Windows' onChange={ this.handleQuestionChange }/>Windows<br />
+            <input class='option-input checkbox' type='radio' name='q1' value='OSX' onChange={ this.handleQuestionChange }/>OSX<br />
+            <input class='option-input checkbox' type='radio' name='q1' value='Linux' onChange={ this.handleQuestionChange }/>Linux<br />
+            <input class='option-input checkbox' type='radio' name='q1' value='Solaris' onChange={ this.handleQuestionChange }/>Solaris<br />
+            <input class='option-input checkbox' type='radio' name='q1' value='Other' onChange={ this.handleQuestionChange }/>Other<br />
           </div>
           <div>
             <label>Какая ваша любимая TV?</label><br />
-            <input type='radio' name='q2' value='Sony' onChange={ this.handleQuestionChange }/>Sony<br />
-            <input type='radio' name='q2' value='Samsung' onChange={ this.handleQuestionChange }/>Samsung<br />
-            <input type='radio' name='q2' value='Panasonic' onChange={ this.handleQuestionChange }/>Panasonic<br />
-            <input type='radio' name='q2' value='Vizio' onChange={ this.handleQuestionChange }/>Vizio<br />
-            <input type='radio' name='q2' value='Other' onChange={ this.handleQuestionChange }/>Other<br />
+            <input class='option-input checkbox' type='radio' name='q2' value='Sony' onChange={ this.handleQuestionChange }/>Sony<br />
+            <input class='option-input checkbox' type='radio' name='q2' value='Samsung' onChange={ this.handleQuestionChange }/>Samsung<br />
+            <input class='option-input checkbox' type='radio' name='q2' value='Panasonic' onChange={ this.handleQuestionChange }/>Panasonic<br />
+            <input class='option-input checkbox' type='radio' name='q2' value='Vizio' onChange={ this.handleQuestionChange }/>Vizio<br />
+            <input class='option-input checkbox' type='radio' name='q2' value='Other' onChange={ this.handleQuestionChange }/>Other<br />
           </div>
           <div>
             <label>Какая ваша любимая Смартфон?</label><br />
-            <input type='radio' name='q3' value='Apple' onChange={ this.handleQuestionChange }/>Apple<br />
-            <input type='radio' name='q3' value='Samsung' onChange={ this.handleQuestionChange }/>Samsung<br />
-            <input type='radio' name='q3' value='Nexus' onChange={ this.handleQuestionChange }/>Nexus<br />
-            <input type='radio' name='q3' value='Blackberry' onChange={ this.handleQuestionChange }/>Blackberry<br />
-            <input type='radio' name='q3' value='Other' onChange={ this.handleQuestionChange }/>Other<br />
+            <input class='option-input checkbox' type='radio' name='q3' value='Apple' onChange={ this.handleQuestionChange }/>Apple<br />
+            <input class='option-input checkbox' type='radio' name='q3' value='Samsung' onChange={ this.handleQuestionChange }/>Samsung<br />
+            <input class='option-input checkbox' type='radio' name='q3' value='Nexus' onChange={ this.handleQuestionChange }/>Nexus<br />
+            <input class='option-input checkbox' type='radio' name='q3' value='Blackberry' onChange={ this.handleQuestionChange }/>Blackberry<br />
+            <input class='option-input checkbox' type='radio' name='q3' value='Other' onChange={ this.handleQuestionChange }/>Other<br />
           </div>
           <div>
             <label>Какая ваша любимая CPU?</label><br />
-            <input type='radio' name='q4' value='Intel' onChange={ this.handleQuestionChange }/>Intel<br />
-            <input type='radio' name='q4' value='AMD' onChange={ this.handleQuestionChange }/>AMD<br />
-            <input type='radio' name='q4' value='Nvidia' onChange={ this.handleQuestionChange }/>Nvidia<br />
-            <input type='radio' name='q4' value='ARM' onChange={ this.handleQuestionChange }/>ARM<br />
-            <input type='radio' name='q4' value='Other' onChange={ this.handleQuestionChange }/>Other<br />
+            <input class='option-input checkbox' type='radio' name='q4' value='Intel' onChange={ this.handleQuestionChange }/>Intel<br />
+            <input class='option-input checkbox' type='radio' name='q4' value='AMD' onChange={ this.handleQuestionChange }/>AMD<br />
+            <input class='option-input checkbox' type='radio' name='q4' value='Nvidia' onChange={ this.handleQuestionChange }/>Nvidia<br />
+            <input class='option-input checkbox' type='radio' name='q4' value='ARM' onChange={ this.handleQuestionChange }/>ARM<br />
+            <input class='option-input checkbox' type='radio' name='q4' value='Other' onChange={ this.handleQuestionChange }/>Other<br />
           </div>
           <input type='submit' value='Отправлять' />
         </form>
