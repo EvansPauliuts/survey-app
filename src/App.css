@@ -11,6 +11,30 @@ body {
   height: 100%;
 }
 
+.iam {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 1rem 0;
+}
+
+.iam .iam-avatar{
+  background: url(/iam.svg) no-repeat;
+  width: 50px;
+  height: 50px;
+  display: block;
+  background-size: contain;
+}
+
+.iam p {
+  font-size: 1.4rem;
+  color: #4C5D63;
+  font-family: 'Avenir Next Cyr';
+  font-weight: 700;
+}
+
 input {
   -webkit-appearance: none;
 }
@@ -22,8 +46,9 @@ input {
 
 .App {
   text-align: center;
-  width: 100%;
+  width: 1100px;
   max-width: 100%;
+  margin: auto;
 }
 
 .App-header {
@@ -132,7 +157,7 @@ input[type='submit'] {
           box-shadow: 0px 5px 11px rgba( 50, 224, 173, .7);
   cursor: pointer;
   font-family: 'Avenir Next Cyr';
-  font-weight: normal;
+  font-weight: 700;
   text-transform: uppercase;
   -webkit-transform: translateX(0px);
       -ms-transform: translateX(0px);

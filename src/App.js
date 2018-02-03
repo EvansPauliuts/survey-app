@@ -136,6 +136,10 @@ class App extends Component {
 
     return (
       <div className="App">
+        <div className='iam'>
+          <div className='iam-avatar'></div>
+          <p>evanscode</p>
+        </div>
         <div className='App-header text-center'>
           <img src='check.svg' alt='Logo' />
         </div>
