@@ -20,7 +20,7 @@ class App extends Component {
             <Nav />
           </div>
           <Switch>
-            <Route exact path='/survey-app' component={Survey} />
+            <Route exact path='/' component={Survey} />
             <Route path='/result' component={Result} />
             <Route component={NotFound} />
           </Switch>
