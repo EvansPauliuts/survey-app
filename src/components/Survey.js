@@ -94,15 +94,15 @@ class Survey extends Component {
             <input className='option-input checkbox' type='radio' name='q2' value='Sony' onChange={ this.handleQuestionChange }/>Sony<br />
             <input className='option-input checkbox' type='radio' name='q2' value='Samsung' onChange={ this.handleQuestionChange }/>Samsung<br />
             <input className='option-input checkbox' type='radio' name='q2' value='Panasonic' onChange={ this.handleQuestionChange }/>Panasonic<br />
-            <input className='option-input checkbox' type='radio' name='q2' value='Vizio' onChange={ this.handleQuestionChange }/>Vizio<br />
+            <input className='option-input checkbox' type='radio' name='q2' value='Horizont' onChange={ this.handleQuestionChange }/>Vizio<br />
             <input className='option-input checkbox' type='radio' name='q2' value='Other' onChange={ this.handleQuestionChange }/>Other<br />
           </div>
           <div>
             <label>Какой ваш любимый Смартфон?</label><br />
             <input className='option-input checkbox' type='radio' name='q3' value='Apple' onChange={ this.handleQuestionChange }/>Apple<br />
             <input className='option-input checkbox' type='radio' name='q3' value='Samsung' onChange={ this.handleQuestionChange }/>Samsung<br />
-            <input className='option-input checkbox' type='radio' name='q3' value='Nexus' onChange={ this.handleQuestionChange }/>Nexus<br />
-            <input className='option-input checkbox' type='radio' name='q3' value='Blackberry' onChange={ this.handleQuestionChange }/>Blackberry<br />
+            <input className='option-input checkbox' type='radio' name='q3' value='Meizu' onChange={ this.handleQuestionChange }/>Nexus<br />
+            <input className='option-input checkbox' type='radio' name='q3' value='Hiaomi' onChange={ this.handleQuestionChange }/>Blackberry<br />
             <input className='option-input checkbox' type='radio' name='q3' value='Other' onChange={ this.handleQuestionChange }/>Other<br />
           </div>
           <div>
