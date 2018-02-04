@@ -34,10 +34,10 @@ class Result extends Component {
 		              return (
 		              	<li key={ index }>
 		              		<p>Имя: { list.name }</p>
-		            		<div>🖥 { list.answers.q1 }</div>
-		            		<div>📺 { list.answers.q2 }</div>
-		            		<div>📱 { list.answers.q3 }</div>
-		            		<div>🤖 { list.answers.q4 }</div>
+		              		<span role="img" aria-label="imac">🖥 { list.answers.q1 }</span>
+		              		<span role="img" aria-label="tv">📺 { list.answers.q2 }</span>
+		              		<span role="img" aria-label="iphone">📱 { list.answers.q3 }</span>
+		              		<span role="img" aria-label="cpu">🤖 { list.answers.q4 }</span>
 		                </li>
 		                )
 		            })

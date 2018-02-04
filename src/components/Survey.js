@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import IconSurvey from './IconSurvey';
 import uuid from 'uuid';
 import firebase from 'firebase';
 
@@ -76,7 +77,7 @@ class Survey extends Component {
 
     if( this.state.name && this.state.submitted === false ){
 
-      user = <h2>💥 Добро пожаловать { this.state.name } 💥</h2>
+      user = <h2><span role="img" aria-label="cool">💥 Добро пожаловать { this.state.name } 💥</span></h2>
       questions = <span>
         <h3>Небольшие вопросы</h3>
         <form onSubmit={ this.handleQuestionSubmit.bind( this ) }>
@@ -131,14 +132,15 @@ class Survey extends Component {
 
     } else if( this.state.submitted === true ){
       user = <div>
-        <h2 id='user'>Спасибо большое { this.state.name } 👍</h2>
+        <h2 id='user'>
+          Спасибо большое { this.state.name } <span role="img" aria-label="like">👍</span></h2>
       </div>;
     }
 
     return (
       <div className="App">
         <div className='App-header text-center'>
-          <img src='check.svg' alt='Logo' />
+          <IconSurvey width={170} height={130} />
         </div>
         <div className='text-center'>
           { user }

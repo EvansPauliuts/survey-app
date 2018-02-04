@@ -14,10 +14,10 @@ class App extends Component {
         <div className="container">
           <div className='iam'>
             <div className='flex'>
-              <img src='iam.svg' alt='Evans Logo' />
-                <p>evanscode</p>
+              <div className='logo'></div>
+              <p>evanscode</p>
             </div>
-              <Nav />
+            <Nav />
           </div>
           <Switch>
             <Route exact path='/survey-app' component={Survey} />
