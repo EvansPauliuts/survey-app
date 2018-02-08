@@ -224,7 +224,6 @@ input[type='submit']:hover {
 .list {
   text-align: center;
   margin-top: 2rem;
-  width: 650px;
   margin: auto;
   max-width: 100%;
 }
