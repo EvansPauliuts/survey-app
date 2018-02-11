@@ -228,6 +228,12 @@ input[type='submit']:hover {
   max-width: 100%;
 }
 
+.list .load {
+  color: #B2B2B2;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
 .list ul {
   display: -webkit-box;
   display: -ms-flexbox;
