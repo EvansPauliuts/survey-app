@@ -19,12 +19,10 @@ class Result extends Component {
   	fetchDate(){
     	fetch( 'https://simplesurvey-8d9e3.firebaseio.com/survey.json' )
       		.then( response => response.json())
-      		.then( data => {
-        		console.log( data )
-        		this.setState({
-          			list: data,
-          			listFire: data
-        			}, () => console.log( this.state.list ))
+      		.then( data => { this.setState({
+							list: data,
+							listFire: data
+						})
       			})
       		.catch( err => console.log( 'Error', err ))
   	}

@@ -21,10 +21,10 @@ class Survey extends Component {
       id: uuid.v1(),
       name: '',
       answers: {
-        q1: '',
-        q2: '',
-        q3: '',
-        q4: ''
+        q1: 'Не выбрано',
+        q2: 'Не выбрано',
+        q3: 'Не выбрано',
+        q4: 'Не выбрано'
       },
       submitted: false
     }
@@ -87,7 +87,7 @@ class Survey extends Component {
             <input className='option-input checkbox' type='radio' name='q1' value='OSX' onChange={ this.handleQuestionChange }/>OSX<br />
             <input className='option-input checkbox' type='radio' name='q1' value='Linux' onChange={ this.handleQuestionChange }/>Linux<br />
             <input className='option-input checkbox' type='radio' name='q1' value='Solaris' onChange={ this.handleQuestionChange }/>Solaris<br />
-            <input className='option-input checkbox' type='radio' name='q1' value='Other' onChange={ this.handleQuestionChange }/>Other<br />
+            <input className='option-input checkbox' type='radio' name='q1' value='Другие' onChange={this.handleQuestionChange} />Другие<br />
           </div>
           <div>
             <label>Какой ваш любимый TV?</label><br />
@@ -95,7 +95,7 @@ class Survey extends Component {
             <input className='option-input checkbox' type='radio' name='q2' value='Samsung' onChange={ this.handleQuestionChange }/>Samsung<br />
             <input className='option-input checkbox' type='radio' name='q2' value='Panasonic' onChange={ this.handleQuestionChange }/>Panasonic<br />
             <input className='option-input checkbox' type='radio' name='q2' value='Horizont' onChange={ this.handleQuestionChange }/>Horizont<br />
-            <input className='option-input checkbox' type='radio' name='q2' value='Other' onChange={ this.handleQuestionChange }/>Other<br />
+            <input className='option-input checkbox' type='radio' name='q2' value='Другие' onChange={this.handleQuestionChange} />Другие<br />
           </div>
           <div>
             <label>Какой ваш любимый Смартфон?</label><br />
@@ -103,7 +103,7 @@ class Survey extends Component {
             <input className='option-input checkbox' type='radio' name='q3' value='Samsung' onChange={ this.handleQuestionChange }/>Samsung<br />
             <input className='option-input checkbox' type='radio' name='q3' value='Meizu' onChange={ this.handleQuestionChange }/>Meizu<br />
             <input className='option-input checkbox' type='radio' name='q3' value='Xiaomi' onChange={ this.handleQuestionChange }/>Xiaomi<br />
-            <input className='option-input checkbox' type='radio' name='q3' value='Other' onChange={ this.handleQuestionChange }/>Other<br />
+            <input className='option-input checkbox' type='radio' name='q3' value='Другие' onChange={this.handleQuestionChange} />Другие<br />
           </div>
           <div>
             <label>Какое ваше любимое CPU?</label><br />
@@ -111,7 +111,7 @@ class Survey extends Component {
             <input className='option-input checkbox' type='radio' name='q4' value='AMD' onChange={ this.handleQuestionChange }/>AMD<br />
             <input className='option-input checkbox' type='radio' name='q4' value='Nvidia' onChange={ this.handleQuestionChange }/>Nvidia<br />
             <input className='option-input checkbox' type='radio' name='q4' value='ARM' onChange={ this.handleQuestionChange }/>ARM<br />
-            <input className='option-input checkbox' type='radio' name='q4' value='Other' onChange={ this.handleQuestionChange }/>Other<br />
+            <input className='option-input checkbox' type='radio' name='q4' value='Другие' onChange={this.handleQuestionChange} />Другие<br />
           </div>
           <input type='submit' value='Отправлять' />
         </form>
