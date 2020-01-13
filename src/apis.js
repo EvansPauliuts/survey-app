@@ -1,7 +1,7 @@
 export const API = 'https://simplesurvey-8d9e3.firebaseio.com/survey.json';
 
 export const fetchApis = () => (
-    fetch( 'https://simplesurvey-8d9e3.firebaseio.com/survey.json' )
+    fetch(API)
         .then( response => response.json())
         .catch( err => console.log( 'Error', err ))
 );
