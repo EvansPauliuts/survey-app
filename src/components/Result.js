@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import ReallySmoothScroll from 'really-smooth-scroll';
-
-ReallySmoothScroll.shim();
+import Total from './Total';
+import { fetchApis } from '../apis.js';
 
 class Result extends Component {
 	constructor( props ){
@@ -13,23 +12,15 @@ class Result extends Component {
     }
 
     componentDidMount(){
-    	this.fetchDate();
+        fetchApis()
+            .then(data => this.setState({ list: data, listFire: data }));
   	}
 
-  	fetchDate(){
-    	fetch( 'https://simplesurvey-8d9e3.firebaseio.com/survey.json' )
-      		.then( response => response.json())
-      		.then( data => { this.setState({
-							list: data,
-							listFire: data
-						})
-      			})
-      		.catch( err => console.log( 'Error', err ))
-  	}
 	render() {
 		let listArray = Object.values( this.state.list );
 		return (
 			<div className='list'>
+				<Total />
 				<h2>Посмотреть опросы</h2>
 				{ !this.state.listFire ? 
 					<h4 className='load'>Loading...</h4> 
@@ -38,7 +29,7 @@ class Result extends Component {
 			          {
 			            listArray.map(( list, index ) => {
 			              return (
-			              	<li key={ index }>
+			              	<li className="list__item" key={ index }>
 			              		<p>Имя: { list.name }</p>
 			              		<span role="img" aria-label="imac">🖥 { list.answers.q1 }</span>
 			              		<span role="img" aria-label="tv">📺 { list.answers.q2 }</span>
