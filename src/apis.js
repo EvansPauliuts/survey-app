@@ -1,4 +1,4 @@
-export const API = 'https://simplesurvey-8d9e3.firebaseio.com/survey.json';
+const API = 'https://simplesurvey-8d9e3.firebaseio.com/survey.json';
 
 export const fetchApis = () => (
     fetch(API)
@@ -7,5 +7,5 @@ export const fetchApis = () => (
 );
 
 export const filterDataApisCount = (data, count, names) => {
-    return data.filter(el => el.answers[count] === names).length;
+    return Object.values(data).filter(el => el.answers[count] === names).length;
 };

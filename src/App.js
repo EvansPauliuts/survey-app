@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { Router, Route, BrowserRouter, Switch } from 'react-router-dom';
+import React from 'react';
+import { Route, BrowserRouter, Switch } from 'react-router-dom';
 import Survey from './components/Survey';
 import Result from './components/Result';
 import Nav from './components/Nav';
@@ -7,27 +7,23 @@ import NotFound from './components/NotFound';
 
 import './App.css';
 
-class App extends Component {
-  render() {
-    return (
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+const App = () => (
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
         <div className="container">
-          <div className='iam'>
-            <div className='flex'>
-              <div className='logo'></div>
-              <p>evanscode</p>
+            <div className='iam'>
+                <div className='flex'>
+                    <div className='logo'/>
+                    <p>evanscode</p>
+                </div>
+                <Nav />
             </div>
-            <Nav />
-          </div>
-          <Switch>
-            <Route exact path='/' component={Survey} />
-            <Route path='/result' component={Result} />
-            <Route component={NotFound} />
-          </Switch>
+            <Switch>
+                <Route exact path='/' component={Survey} />
+                <Route path='/result' component={Result} />
+                <Route component={NotFound} />
+            </Switch>
         </div>
-      </BrowserRouter>
-    );
-  }
-}
+    </BrowserRouter>
+);
 
 export default App;
