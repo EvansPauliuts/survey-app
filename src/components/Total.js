@@ -94,10 +94,14 @@ const Total = () => {
         <div className='total'>
             <h2>Результаты опросов:</h2>
             <h4><span role="img" aria-label="sheep">📢</span>Всего опросов: {Object.values(lists).length}</h4>
-            <Doughnut
-                data={data}
-                height={110}
-            />
+            <article id="chartcanvas">
+                <Doughnut
+                    data={data}
+                    options={{
+                        maintainAspectRatio: false
+                    }}
+                />
+            </article>
         </div>
     );
 };
