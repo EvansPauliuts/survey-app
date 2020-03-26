@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { fetchApis, filterDataApisCount } from '../apis.js';
 import { Doughnut } from 'react-chartjs-2';
+import 'chartjs-plugin-datalabels';
 
 const Total = () => {
     const [lists, setLists] = useState([]);
@@ -88,8 +89,6 @@ const Total = () => {
         }]
     };
 
-    console.log(filterDataApisCount(lists, 'q3', 'Apple'));
-   
     return (
         <div className='total'>
             <h2>Результаты опросов:</h2>
@@ -98,7 +97,41 @@ const Total = () => {
                 <Doughnut
                     data={data}
                     options={{
-                        maintainAspectRatio: false
+                        maintainAspectRatio: false,
+                        legend: {
+                            position: 'top',
+                            align: 'center',
+                            display: true,
+                            labels: {
+                                fontFamily: "'Consolas', sans-serif",
+                                fontSize: 18,
+                                fontColor: '#4C5D63',
+                                boxWidth: 18
+                            },
+                        },
+                        tooltips: {
+                            enabled: true,
+                        },
+                        animation: {
+                            animateScale: true
+                        },
+                        plugins: {
+                            datalabels: {
+                                color: '#fff',
+                                backgroundColor: 'rgba(0,0,0,0.7)',
+                                textAlign: 'center',
+                                borderRadius: 5,
+                                padding: 5,
+                                rotation: 0,
+                                font: {
+                                    lineHeight: 1.6,
+                                    size: 16,
+                                },
+                                formatter: function(val) {
+                                    return val;
+                                },
+                            }
+                        },
                     }}
                 />
             </article>

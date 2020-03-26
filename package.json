@@ -5,6 +5,7 @@
     "homepage": "https://evansroony.github.io/survey-app",
     "dependencies": {
         "chart.js": "^2.9.3",
+        "chartjs-plugin-datalabels": "^0.7.0",
         "firebase": "^4.13.1",
         "react": "^16.12.0",
         "react-chartjs-2": "^2.9.0",
