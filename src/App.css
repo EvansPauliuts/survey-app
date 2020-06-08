@@ -5,7 +5,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Avenir Next Cyr';
+    font-family: 'IBM Plex Sans', sans-serif;
     font-size: 16px;
     width: 100%;
     height: 100%;
@@ -33,7 +33,7 @@ a {
 h2 {
     font-size: 2rem;
     color: #4C5D63;
-    font-family: 'Avenir Next Cyr';
+    font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 900;
     margin-bottom: 1rem;
 }
@@ -41,7 +41,7 @@ h2 {
 h4 {
     font-size: 1.3rem;
     color: #4C5D63;
-    font-family: 'Avenir Next Cyr';
+    font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 900;
     margin-bottom: 1.4rem;
     text-align: left;
@@ -82,7 +82,7 @@ h4 {
 .iam p {
     font-size: 1.4rem;
     color: #4C5D63;
-    font-family: 'Avenir Next Cyr';
+    font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 700;
 }
 
@@ -94,7 +94,7 @@ h4 {
 
 .iam .nav li {
     color: #4C5D63;
-    font-family: 'Avenir Next Cyr';
+    font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 700;
     font-size: 1.2rem;
     margin-right: 1rem;
@@ -135,29 +135,29 @@ input {
 .text-center h2 {
     font-size: 3rem;
     color: #4C5D63;
-    font-family: 'Avenir Next Cyr';
+    font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 700;
 }
 
 .text-center span h1 {
-    font-size: 3.875rem;
+    font-size: 3rem;
     color: #4C5D63;
-    font-family: 'Avenir Next Cyr';
+    font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 700;
 }
 
 .text-center span h2 {
     font-size: 1.2rem;
     color: #B2B2B2;
-    font-family: 'Avenir Next Cyr';
-    font-weight: normal;
-    margin: .4rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    font-style: italic;
 }
 
 .container h3 {
     font-size: 1.3rem;
     color: #B2B2B2;
-    font-family: 'Avenir Next Cyr';
+    font-family: 'IBM Plex Sans', sans-serif;
     font-weight: normal;
 }
 
@@ -170,8 +170,6 @@ input {
     justify-content: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -184,7 +182,6 @@ input[type='text'] {
     border-radius: 5px;
     border: #eee solid 3px;
     font-size: 1rem;
-    margin-bottom: 3rem;
     -webkit-appearance: none;
 }
 
@@ -197,7 +194,7 @@ form div {
 form div label {
     font-size: 1.2rem;
     color: #4C5D63;
-    font-family: 'Avenir Next Cyr';
+    font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 700;
     -webkit-appearance: none;
 }
@@ -212,11 +209,10 @@ input[type='submit'] {
     color: white;
     outline: none;
     font-size: 1rem;
-    margin-bottom: 5rem;
     -webkit-box-shadow: 0px 5px 11px rgba(50, 224, 173, .7);
     box-shadow: 0px 5px 11px rgba(50, 224, 173, .7);
     cursor: pointer;
-    font-family: 'Avenir Next Cyr';
+    font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     -webkit-transform: translateX(0px);
@@ -268,7 +264,7 @@ input[type='submit']:hover {
     cursor: pointer;
     transition: all .2s ease-in-out;
     padding: 1rem 1.4rem;
-    font-family: 'Avenir Next Cyr';
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 .list ul .list__item:hover {
@@ -293,7 +289,7 @@ input[type='submit']:hover {
 }
 
 .list li>span {
-    font-family: 'Avenir Next Cyr';
+    font-family: 'IBM Plex Sans', sans-serif;;
     font-size: 1.1rem;
     color: #fff;
     font-weight: 700;
@@ -305,7 +301,7 @@ input[type='submit']:hover {
     margin: 3rem auto 0;
     font-size: 4rem;
     max-width: 100%;
-    font-family: 'Avenir Next Cyr';
+    font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 700;
 }
 

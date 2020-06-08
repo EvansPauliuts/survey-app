@@ -91,8 +91,8 @@ const Total = () => {
 
     return (
         <div className='total'>
-            <h2>Результаты опросов:</h2>
-            <h4><span role="img" aria-label="sheep">📢</span>Всего опросов: {Object.values(lists).length}</h4>
+            <h2>Result surveys:</h2>
+            <h4><span role="img" aria-label="sheep">📢</span>All surveys: {Object.values(lists).length}</h4>
             <article id="chartcanvas">
                 <Doughnut
                     data={data}
@@ -103,7 +103,7 @@ const Total = () => {
                             align: 'center',
                             display: true,
                             labels: {
-                                fontFamily: "'Consolas', sans-serif",
+                                fontFamily: "'IBM Plex Sans', sans-serif",
                                 fontSize: 18,
                                 fontColor: '#4C5D63',
                                 boxWidth: 18

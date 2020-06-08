@@ -12,7 +12,7 @@ const Result = () => {
     return (
         <div className='list'>
             <Total />
-            <h2>Посмотреть опросы</h2>
+            <h2>View surveys</h2>
             { list.length === 0 ? 
                 <h4 className='load'>Loading...</h4> 
                 : 
@@ -21,7 +21,7 @@ const Result = () => {
                     Object.values(list).map(( list, index ) => {
                         return (
                         <li className="list__item" key={ index }>
-                            <p>Имя: { list.name }</p>
+                            <p>Name: { list.name }</p>
                             <span role="img" aria-label="imac">🖥 { list.answers.q1 }</span>
                             <span role="img" aria-label="tv">📺 { list.answers.q2 }</span>
                             <span role="img" aria-label="iphone">📱 { list.answers.q3 }</span>
