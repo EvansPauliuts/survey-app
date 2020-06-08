@@ -59,7 +59,7 @@ const Survey = () => {
                     <input className='option-input checkbox' type='radio' name='q1' value='OSX' onChange={handleQuestionChange}/>OSX<br />
                     <input className='option-input checkbox' type='radio' name='q1' value='Linux' onChange={handleQuestionChange}/>Linux<br />
                     <input className='option-input checkbox' type='radio' name='q1' value='Solaris' onChange={handleQuestionChange}/>Solaris<br />
-                    <input className='option-input checkbox' type='radio' name='q1' value='Другие' onChange={handleQuestionChange} />Other<br />
+                    <input className='option-input checkbox' type='radio' name='q1' value='Other' onChange={handleQuestionChange} />Other<br />
                 </div>
                 <div>
                     <label>What's your favorite TV?</label><br />
@@ -67,7 +67,7 @@ const Survey = () => {
                     <input className='option-input checkbox' type='radio' name='q2' value='Samsung' onChange={handleQuestionChange}/>Samsung<br />
                     <input className='option-input checkbox' type='radio' name='q2' value='Panasonic' onChange={handleQuestionChange}/>Panasonic<br />
                     <input className='option-input checkbox' type='radio' name='q2' value='Horizont' onChange={handleQuestionChange}/>Horizont<br />
-                    <input className='option-input checkbox' type='radio' name='q2' value='Другие' onChange={handleQuestionChange} />Other<br />
+                    <input className='option-input checkbox' type='radio' name='q2' value='Other' onChange={handleQuestionChange} />Other<br />
                 </div>
                 <div>
                     <label>What's your favorite Phone?</label><br />
@@ -75,7 +75,7 @@ const Survey = () => {
                     <input className='option-input checkbox' type='radio' name='q3' value='Samsung' onChange={handleQuestionChange}/>Samsung<br />
                     <input className='option-input checkbox' type='radio' name='q3' value='Meizu' onChange={handleQuestionChange}/>Meizu<br />
                     <input className='option-input checkbox' type='radio' name='q3' value='Xiaomi' onChange={handleQuestionChange}/>Xiaomi<br />
-                    <input className='option-input checkbox' type='radio' name='q3' value='Другие' onChange={handleQuestionChange}/>Other<br />
+                    <input className='option-input checkbox' type='radio' name='q3' value='Other' onChange={handleQuestionChange}/>Other<br />
                 </div>
                 <div>
                     <label>What's your favorite CPU?</label><br />
@@ -83,7 +83,7 @@ const Survey = () => {
                     <input className='option-input checkbox' type='radio' name='q4' value='AMD' onChange={handleQuestionChange}/>AMD<br />
                     <input className='option-input checkbox' type='radio' name='q4' value='Nvidia' onChange={handleQuestionChange}/>Nvidia<br />
                     <input className='option-input checkbox' type='radio' name='q4' value='ARM' onChange={handleQuestionChange}/>ARM<br />
-                    <input className='option-input checkbox' type='radio' name='q4' value='Другие' onChange={handleQuestionChange} />Other<br />
+                    <input className='option-input checkbox' type='radio' name='q4' value='Other' onChange={handleQuestionChange} />Other<br />
                 </div>
                 <input type='submit' value='Send' />
             </form>

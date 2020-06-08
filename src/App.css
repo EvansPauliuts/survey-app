@@ -144,6 +144,7 @@ input {
     color: #4C5D63;
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 700;
+    margin-top: 8rem;
 }
 
 .text-center span h2 {
@@ -456,10 +457,11 @@ input[type='submit']:hover {
     #form {
         width: calc(100% - 2rem);
         margin: auto;
+        flex-direction: column;
     }
 
-    input[type='text'] {
-        width: calc(100% - 2rem);
+    input[type='submit'], input[type='text'] {
+        width: 100%;
     }
 
     .container {

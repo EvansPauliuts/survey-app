@@ -7,8 +7,7 @@ export const fetchApis = () => (
 );
 
 export const filterDataApisCount = (data, count, names) => {
-    const countS = !count && count;
-    return Object.values(data).filter(el => el.answers[countS] === names).length;
+    return Object.values(data).filter(el => el.answers[count] === names).length;
 };
 
 export const config = {
