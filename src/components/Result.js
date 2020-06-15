@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { orderBy } from 'lodash';
 import Total from './Total';
 import { fetchApis } from '../apis.js';
 
@@ -9,6 +10,8 @@ const Result = () => {
         fetchApis().then(data => setList(data));
     }, []);
 
+    const sortList = orderBy(list, 'datetime', 'desc');
+
     return (
         <div className='list'>
             <Total />
@@ -18,7 +21,7 @@ const Result = () => {
                 : 
                 <ul>
                     {
-                    Object.values(list).map(( list, index ) => {
+                    Object.values(sortList).map(( list, index ) => {
                         return (
                         <li className="list__item" key={ index }>
                             <p>Name: { list.name }</p>

@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import uuid from 'uuid';
 import firebase from 'firebase';
 import { config } from '../apis';
+import moment from 'moment';
 
 import Emoji from './Emoji';
 
@@ -24,9 +25,11 @@ const Survey = () => {
     };
 
     const handleQuestionSubmit = e => {
+        let datetime = moment().format( 'YYYY-MM-DD  HH:mm:ss' );
         firebase.database().ref( 'survey/' + uuid.v4() ).set({
             name: name,
-            answers: answers
+            answers: answers,
+            datetime,
         });
         setSubmitted(true);
         e.preventDefault();
