@@ -1,5 +1,7 @@
 import React from 'react';
-const Emoji = props => (
+import { Emodji } from '../types';
+
+const Emoji = (props: Emodji) => (
     <span
         className="emoji"
         role="img"

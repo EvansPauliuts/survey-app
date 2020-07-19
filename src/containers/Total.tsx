@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { fetchApis, filterDataApisCount } from '../apis.js';
+import { fetchApis, filterDataApisCount } from '../utils/apis';
 import { Doughnut } from 'react-chartjs-2';
 import 'chartjs-plugin-datalabels';
 
+import { NewItemData } from '../types/index';
+
 const Total = () => {
-    const [lists, setLists] = useState([]);
+    const [lists, setLists] = useState<NewItemData[]>([]);
 
     useEffect(() => {
         fetchApis().then(data => setLists(data));
@@ -127,7 +129,7 @@ const Total = () => {
                                     lineHeight: 1.6,
                                     size: 16,
                                 },
-                                formatter: function(val) {
+                                formatter: function(val: string) {
                                     return val;
                                 },
                             }

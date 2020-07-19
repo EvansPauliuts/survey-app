@@ -6,8 +6,8 @@ export const fetchApis = () => (
         .catch( err => new Error(err))
 );
 
-export const filterDataApisCount = (data, count, names) => {
-    return Object.values(data).filter(el => el.answers[count] === names).length;
+export const filterDataApisCount = (data: any, count: string, names: string) => {
+    return Object.values(data).filter((el: any) => el.answers[count] === names).length;
 };
 
 export const config = {

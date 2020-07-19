@@ -8,12 +8,20 @@
         "chartjs-plugin-datalabels": "^0.7.0",
         "firebase": "^4.13.1",
         "moment": "^2.26.0",
-        "react": "^16.12.0",
         "react-chartjs-2": "^2.9.0",
-        "react-dom": "^16.12.0",
         "react-router-dom": "^4.3.1",
-        "react-scripts": "^1.1.0",
-        "uuid": "^3.3.3"
+        "uuid": "^3.3.3",
+        "@testing-library/jest-dom": "^4.2.4",
+        "@testing-library/react": "^9.3.2",
+        "@testing-library/user-event": "^7.1.2",
+        "@types/jest": "^24.0.0",
+        "@types/node": "^12.0.0",
+        "@types/react": "^16.9.0",
+        "@types/react-dom": "^16.9.0",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1",
+        "react-scripts": "3.4.1",
+        "typescript": "~3.7.2"
     },
     "scripts": {
         "start": "react-scripts start",
@@ -22,8 +30,23 @@
         "predeploy": "npm run build",
         "deploy": "gh-pages -d build"
     },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
     "devDependencies": {
         "gh-pages": "^1.1.0",
         "lodash": "^4.17.15"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
     }
 }

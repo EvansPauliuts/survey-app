@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { orderBy } from 'lodash';
 import Total from './Total';
-import { fetchApis } from '../apis.js';
-import Emoji from "./Emoji";
+import { fetchApis } from '../utils/apis';
+import Emoji from '../components/Emoji';
+import { ListItem } from '../types/index';
 
 const Result = () => {
-    const [list, setList] = useState([]);
+    const [list, setList] = useState<ListItem[]>([]);
     
     useEffect(() => {
         fetchApis().then(data => setList(data));
@@ -22,13 +23,13 @@ const Result = () => {
                     <Total />
                     <h2>View surveys</h2>
                     <ul>
-                        { Object.values(sortList).map(( list, index ) => (
+                        { Object.values(sortList).map(( lst: any, index ) => (
                             <li className="list__item" key={ index }>
-                                <p>Name: { list.name }</p>
-                                <span role="img" aria-label="imac">🖥 { list.answers.q1 }</span>
-                                <span role="img" aria-label="tv">📺 { list.answers.q2 }</span>
-                                <span role="img" aria-label="iphone">📱 { list.answers.q3 }</span>
-                                <span role="img" aria-label="cpu">🤖 { list.answers.q4 }</span>
+                                <p>Name: { lst.name }</p>
+                                <span role="img" aria-label="imac">🖥 { lst.answers.q1 }</span>
+                                <span role="img" aria-label="tv">📺 { lst.answers.q2 }</span>
+                                <span role="img" aria-label="iphone">📱 { lst.answers.q3 }</span>
+                                <span role="img" aria-label="cpu">🤖 { lst.answers.q4 }</span>
                             </li>
                         ))}
                     </ul>

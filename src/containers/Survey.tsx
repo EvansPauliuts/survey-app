@@ -1,15 +1,15 @@
 import React, { useState, useRef } from 'react';
 import uuid from 'uuid';
 import firebase from 'firebase';
-import { config } from '../apis';
+import { config } from '../utils/apis';
 import moment from 'moment';
 
-import Emoji from './Emoji';
+import Emoji from '../components/Emoji';
 
 firebase.initializeApp(config);
 
 const Survey = () => {
-    const inputEl = useRef(null);
+    const inputEl = useRef<HTMLInputElement>(null);
     const [name, setName] = useState('');
     const [answers, setAnswers] = useState({
         q1: 'Not selected',
@@ -19,12 +19,15 @@ const Survey = () => {
     });
     const [submitted, setSubmitted] = useState(false);
 
-    const handleNameSubmit = e => {
-        e.preventDefault();
-        setName(inputEl.current.value);
+    const handleNameSubmit = (event: React.FormEvent) => {
+        event.preventDefault();
+
+        if (null !== inputEl.current) {
+            setName(inputEl.current.value);
+        }
     };
 
-    const handleQuestionSubmit = e => {
+    const handleQuestionSubmit = (event: React.FormEvent) => {
         let datetime = moment().format( 'YYYY-MM-DD  HH:mm:ss' );
         firebase.database().ref( 'survey/' + uuid.v4() ).set({
             name: name,
@@ -32,13 +35,13 @@ const Survey = () => {
             datetime,
         });
         setSubmitted(true);
-        e.preventDefault();
+        event.preventDefault();
     };
 
-    const handleQuestionChange = e => {
+    const handleQuestionChange = (event: React.FormEvent) => {
         let answer = answers;
-        let {value} = e.target;
-        switch (e.target.name) {
+        let { value, name } = event.target as HTMLInputElement;
+        switch (name) {
             case 'q1': answer.q1 = value; break;
             case 'q2': answer.q2 = value; break;
             case 'q3': answer.q3 = value; break;

@@ -1,8 +1,8 @@
 import React from 'react';
 import { Route, BrowserRouter, Switch } from 'react-router-dom';
-import Survey from './components/Survey';
-import Result from './components/Result';
-import Nav from './components/Nav';
+import Survey from './containers/Survey';
+import Result from './containers/Result';
+import Nav from './containers/Nav';
 import NotFound from './components/NotFound';
 
 import './App.css';
