@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [8.x, 13.x]
+        node-version: [13.x]
     steps:
     - uses: actions/checkout@v1
     - name: Use Node.js ${{ matrix.node-version }}
@@ -22,5 +22,7 @@ jobs:
       run: |
         git config --global user.email ${{ secrets.PERSONAL_GITHUB_EMAIL }}
         git config --global user.name ${{ secrets.PERSONAL_GITHUB_USERNAME }}
-        git remote set-url origin https://${{ secrets.PERSONAL_GITHUB_TOKEN }}>@github.com/${{ secrets.PERSONAL_GITHUB_USERNAME }}/survey-app.git
+        git remote set-url origin https://${{ secrets.PERSONAL_GITHUB_TOKEN }}@github.com/${{ secrets.PERSONAL_GITHUB_USERNAME }}/survey-app.git
         npm run deploy
+
+        git@github.com:EvansPauliuts/survey-app.git
