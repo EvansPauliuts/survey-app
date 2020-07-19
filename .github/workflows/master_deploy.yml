@@ -24,5 +24,3 @@ jobs:
         git config --global user.name ${{ secrets.PERSONAL_GITHUB_USERNAME }}
         git remote set-url origin https://${{ secrets.PERSONAL_GITHUB_TOKEN }}@github.com/${{ secrets.PERSONAL_GITHUB_USERNAME }}/survey-app.git
         npm run deploy
-
-        git@github.com:EvansPauliuts/survey-app.git
