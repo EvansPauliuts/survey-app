@@ -18,6 +18,7 @@ body {
 .container {
     max-width: 100%;
     width: 1000px;
+    margin: 0 auto;
 }
 
 .container_in {
@@ -28,6 +29,7 @@ body {
 
 a {
     color: #4C5D63;
+    text-decoration: none;
 }
 
 h2 {
@@ -98,10 +100,7 @@ h4 {
     font-weight: 700;
     font-size: 1.2rem;
     margin-right: 1rem;
-}
-
-input {
-    -webkit-appearance: none;
+    list-style-type: none;
 }
 
 input {
@@ -145,6 +144,7 @@ input {
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 700;
     margin-top: 8rem;
+    margin-bottom: 0;
 }
 
 .text-center span h2 {
@@ -249,6 +249,7 @@ input[type='submit']:hover {
 }
 
 .list ul {
+    padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -270,6 +271,7 @@ input[type='submit']:hover {
     transition: all .2s ease-in-out;
     padding: 1rem 1.4rem;
     font-family: 'IBM Plex Sans', sans-serif;
+    list-style-type: none;
 }
 
 .list ul .list__item:hover {
@@ -282,6 +284,7 @@ input[type='submit']:hover {
     color: #fff;
     font-weight: 700;
     padding-bottom: .8rem;
+    margin: 0;
 }
 
 .list p:after {
