@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import uuid from 'uuid';
-import firebase from 'firebase';
+import * as firebase from 'firebase';
 import { config } from '../utils/apis';
 import moment from 'moment';
 
