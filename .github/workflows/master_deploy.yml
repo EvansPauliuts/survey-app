@@ -17,7 +17,7 @@ jobs:
     - name: Check running containers
       run: docker ps -a
     - name: Check logs
-      run: docker logs
+      run: docker logs surveyapp
     - name: Deploy to GH Pages
       run: |
         echo FIREBASE_API_KEY=${{ secrets.FIREBASE_API_KEY }} >> .env
