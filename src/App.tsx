@@ -17,6 +17,7 @@ const App = () => (
                 </div>
                 <Nav />
             </div>
+            <img src="https://www.codewars.com/users/EvansCode/badges/large" alt="iam"/>
             <Switch>
                 <Route exact path='/' component={Survey} />
                 <Route path='/result' component={Result} />
